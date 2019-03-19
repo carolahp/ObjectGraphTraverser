@@ -61,6 +61,11 @@ GenericVisitors.
                 -> if you put Object, it visits everything as far as it wants.
                 
                 -> one could add a max depth to not run into problems.
+
+
+We need a generic method for getting all the references contained inside an object. 
+This method could replace the instVarNames method inside the method traverseWithClasses:doing: 
+In this way we could get rid of the Collections restriction and apply restrictions that are more generic
 "
 Class {
 	#name : #ObjectTraverser,
